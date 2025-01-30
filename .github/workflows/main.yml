@@ -1,16 +1,13 @@
 name: Test Action
 
-on:
- push:
-   branches:
-     -main
+on: [push]
 
-  jobs:
+jobs:
     test:
       run-on: ubuntu-latest
       steps:
-        -name: Checkout Code
-         uses: actions/checkout@v3
+        -name: 23ds2000041@ds.study.iitm.ac.in
+        run:  echo "step with email in name"
 
-        -name:  23ds2000041@ds.study.iitm.ac.in
-          run: echo "Hello, World!"
+          -name:Another Step
+           run:echo "Hello, World!"
